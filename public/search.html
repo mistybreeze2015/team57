@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.1/css/bootstrap-slider.min.css" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+		<link href="css/search.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/movie_banners.css">
+
+		<title>Search</title>
+	</head>
+	<body>
+
+		<!--Include Header by Iframe, using referenced code: https://juejin.im/post/5a685e0e6fb9a01ca602f8ed-->
+		<iframe name="header" width=100% height=200px marginwidth=10px marginheight=10px frameborder="no" border="0"  src="header.html" ></iframe>
+
+		<div id="nav"></div>
+		<div class="row">
+			<div class="col-1"></div>
+			<!-- filtering options -->
+			<div id="filter" class="col-2">
+				<div id="medium_filter" class="margin_v">
+					<h5>Medium</h5>
+					<div class="form-check">
+						<input type="checkbox" class="form-check-input" id="film_check">
+						<label class="form-check-label" for="action_check">Film</label>
+					</div>
+
+					<div class="form-check">
+						<input type="checkbox" class="form-check-input" id="television_check">
+						<label class="form-check-label" for="action_check">Television</label>
+					</div>
+				</div>
+
+				<div id="release_year_filter" class="margin_v">
+					<h5>Release Year</h5>
+					<input id="release_year" data-slider-min="1900" data-slider-max="2020" data-slider-step="1" data-slider-value="[2000,2020]"/>
+					<p id="release_year_text">2000,2020</p>
+				</div>
+
+				<div id="genre_filter" class="margin_v">
+					<h5>Genres</h5>
+					<div class="form-check">
+						<input type="checkbox" class="form-check-input" id="action_check">
+						<label class="form-check-label" for="action_check">Action</label>
+					</div>
+					<div class="form-check">
+						<input type="checkbox" class="form-check-input" id="adventure_check">
+						<label class="form-check-label" for="adventure_check">Adventure</label>
+					</div>
+					<div class="form-check">
+						<input type="checkbox" class="form-check-input" id="comedy_check">
+						<label class="form-check-label" for="comedy_check">Comedy</label>
+					</div>
+					<div class="form-check">
+						<input type="checkbox" class="form-check-input" id="crime_check">
+						<label class="form-check-label" for="crime_check">Crime</label>
+					</div>
+					<div class="form-check">
+						<input type="checkbox" class="form-check-input" id="drama_check">
+						<label class="form-check-label" for="drama_check">Drama</label>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="row">
+					<!-- sorting options -->
+					<div id="sort" class="col margin_v">Sort: <span id="sort_rating" class="bttn sort_active">Rating</span> | <span id="sort_popularity" class="bttn">Popularity</span></div>
+
+					<div class="w-100"></div>
+
+					<!-- searching ui -->
+					<div id="search" class="col margin_v">
+						<form id="search" class="form-inline ">
+							<input id="search_bar" class="form-control mr-3" type="text" placeholder="Search" aria-label="Search">
+							<i id="search_button" class="bttn fas fa-search" aria-hidden="true"></i>
+						</form>
+					</div>
+
+					<div class="w-100"></div>
+
+					<!-- search results -->
+					<div id="movies" class="col">
+						<!-- Movie banners get inserted in here -->
+					</div>
+				</div>
+			</div>
+			<div class="col-1"></div>
+		</div>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.1/bootstrap-slider.min.js"></script>
+
+		<script src="js/movie_banners.js"></script>
+		<script src="js/search.js"></script>
+	</body>
+</html>

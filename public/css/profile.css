@@ -1,0 +1,95 @@
+/* profile information */
+
+    #profile_picture {
+        display: block;
+    	margin-left: auto;
+        margin-right: auto;
+        width: 150px;
+        border-radius: 50%;
+    	border: 3px solid black;
+    }
+
+    #profile_banner {
+        display: block;
+        background-color: black;
+        margin-left: 45%;
+        margin-right: 45%;
+        margin-top: 10px;
+    }
+
+    #profile_banner h2 {
+        display: inline;
+        color: white;
+    }
+    #profile_banner p {
+        display: inline;
+        color: white;
+    }
+
+    .edit_profile_button {
+        text-align: center;
+    }
+
+
+    div.profile_information {
+        text-align: center;
+    }
+
+/* movie list styling (recently rated) */
+
+    .profile_movie_list {
+        display: block;
+        background-color: black;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 10px;
+        min-height: 75px;
+    }
+
+    .profile_movie_list h2 {
+        display: inline;
+        margin-left: 20px;
+        color: white;
+    }
+
+    .profile_movie_list img {
+        width: 150px;
+        margin: 20px;
+    }
+
+/* review list styling */
+
+    .profile_reviews_list {
+        display: block;
+        background-color: black;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 10px;
+        overflow: auto;
+        min-height: 75px;
+    }
+
+    .movie_review {
+        clear: left;
+    }
+
+    .profile_reviews_list img {
+        width: 150px;
+        margin: 20px;
+        float: left;
+    }
+
+    .profile_reviews_list p {
+        margin: 20px;
+        color: white;
+    }
+    .profile_reviews_list h2 {
+        display: inline;
+        margin-left: 20px;
+        color: white;
+    }
+    .profile_reviews_list strong {
+        display: inline;
+        font-size: 200%;
+        color: white;
+    }

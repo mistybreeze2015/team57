@@ -1,0 +1,60 @@
+#top_bar {
+  height: 80px;
+}
+
+#logo {
+  float: left;
+  height: inherit;
+}
+
+#logo_img {
+  height: inherit;
+  border-radius: 40px;
+}
+
+#login {
+  float: right;
+  border-radius: 10px;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-top: 10px;
+  margin-right: 10px;
+
+  /* lightyellow */
+  background-color: #fcff84;
+
+  font-size: 150%;
+  color: black;
+	text-align: center;
+  text-decoration:none;
+}
+
+#navigation_bar {
+  /* Give links equal width */
+  table-layout: fixed;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* Centre navigation bar */
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/* Make links round and lightyellow */
+#navigation_bar th {
+  background-color: #fcff84;
+  border-radius: 20px;
+}
+
+/* Make links look like normal text in navigation bar and makes the entire
+   th element clickable */
+#navigation_bar th a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-size: 200%;
+}

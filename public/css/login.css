@@ -1,0 +1,45 @@
+#loginPanel{
+	display:block;
+	text-align:center;
+	margin: 0 auto;
+}
+#loginBtnDiv{
+	text-align:center;
+	margin-left:14%;
+	position:relative;
+}
+#test{
+	font-family: "Lucida Console";
+	text-align:center;
+	font-size:8px;
+}
+#wcomeDiv{
+	text-align:left;
+	display:inline-block;
+	min-width:50%;
+	max-width:50%;
+	font-size:20px;}
+#emphasize{
+	font-weight:bold;
+	font-size:28px;
+	font-style:italic;}
+#loginMsg{
+	text-align:center;
+	visibility:hidden;
+}
+#username{
+font-size:20px;}
+#password{
+font-size:20px;}
+#loginBtn{
+padding: 10px 10px;
+font-size:18px;}
+.boldFont{
+	font-weight:bold;}
+body {
+	background-color: cornsilk;
+	margin: 0;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+

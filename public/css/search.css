@@ -1,0 +1,20 @@
+.margin_v{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* placeholder */
+.movie_element{
+    height: 250px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: gray;
+}
+
+.bttn:hover{
+    cursor: pointer;
+}
+
+.sort_active{
+    color: blue;
+}

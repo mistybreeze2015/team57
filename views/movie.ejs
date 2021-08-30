@@ -1,0 +1,53 @@
+<html>
+	<head>
+ 	<title>
+	Movie Review
+	</title>
+	<link rel="stylesheet" type="text/css" href="../css/movie.css">
+	</head>
+	<body>
+	<!--Include Header by Iframe, using referenced code: https://juejin.im/post/5a685e0e6fb9a01ca602f8ed-->
+	<iframe name="header" width=100% height=200px marginwidth=10px marginheight=10px frameborder="no" border="0"  src="../header.html" ></iframe>
+	<div id="reviewPanel">
+	<!--Movies inserted here-->
+	</div>
+	<div id="commentPanel">
+	<h3>User Comments </h3>
+	</div>
+	<div id="commentRegion">
+	<form action="/postComment" method="post"  id="commentForm" enctype="application/x-www-form-urlencoded">
+	<div id="capital">On a scale from 1-10 what would you rate this movie?</div>
+	<select id="rate" name="rate" type="text" form="commentForm">
+	<option type ="text" value="1.0">1.0</option>
+	<option type ="text" value="1.5">1.5</option>
+	<option type ="text" value="2.0">2.0</option>
+	<option type ="text" value="2.5">2.5</option>
+	<option type ="text" value="3.0">3.0</option>
+	<option type ="text" value="3.5">3.5</option>
+	<option type ="text" value="4.0">4.0</option>
+	<option type ="text" value="4.5">4.5</option>
+	<option type ="text" value="5.0">5.0</option>
+	<option type ="text" value="5.5">5.5</option>
+	<option type ="text" value="6.0">6.0</option>
+	<option type ="text" value="6.5">6.5</option>
+	<option type ="text" value="7.0">7.0</option>
+	<option type ="text" value="7.5">7.5</option>
+	<option type ="text" value="8.0">8.0</option>
+	<option type ="text" value="8.5">8.5</option>
+	<option type ="text" value="9.0">9.0</option>
+	<option type ="text" value="9.5">9.5</option>
+	<option type ="text" value="10.0" selected="selected">10.0</option>
+	</select>
+	<div id="capital">Leave Comment</div>
+	<textarea name ="commentText"  id="textArea" type="text" form= "commentForm" ></textarea><br>
+	<br>
+	<input class="Btn" id="submitBtn" name="submitBtn" type="submit" value="Submit">
+	<button class="Btn" id="resetBtn" name="resetBtn" type="button" value="reset">&nbspReset&nbsp </button>
+	</form>  
+	</div>
+	</body>
+	<script> const film = <%- JSON.stringify(film) %> </script>
+	<script src="../js/movie.js"></script>
+	</script>	
+
+</html>

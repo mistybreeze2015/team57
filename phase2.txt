@@ -1,0 +1,68 @@
+URL: https://guarded-castle-32919.herokuapp.com/
+
+Pages:
+
+The home page contains a list of popular movies. Clicking on a movie banner brings you to the movie page, which shows more detailed information about a particular movie. The newest page is similar to the home page, but it is shows newer movies near the top. The upcoming page is similar in structure to the home page as well, but it shows movies soon to be released.
+
+The search page let's users find movies meeting their criteria. They can specify film/tv, the release year range, and the genres they would like to watch. Note, a search with both action and comedy will return movies with both tags. Additionally, they can refine their search with the search box, which filters movies by comparing their descriptions to the search term. Finally, the user may sort responses by average rating or popularity.
+
+The movie page shows the details of a particular movies. Logged in users are able to add comments and ratings, which other users can see. They can also delete their own comments. The statics for the movies are updated accordingly.
+
+The profile page shows details about a particular user and their recent shows. Users must be logged in to view this page. After successful log-in, normal users are redirected to this page, but it can also be accessed through /profile.
+
+The admin panel accessable through /admin is only available after the admin logs in. It allows the admin to ban users by username, after which the banned user can no longer log in. It also provides an interface to add new movies to the database.
+
+The login page can be accessed through the navigation bar, and new users can make accounts through /register.
+
+Major Paths:
+Related to films:
+POST /upload/:id
+Upload an image selected by the admin to the upload folder and save its path to the movie document with id. Used in admin page when adding new movies.
+
+POST /film
+Add a new film with metadata embedded in the request body. This path is used in the admin page.
+
+GET /film
+Return all films. Used in home page, newest page, and upcoming page.
+
+Get /film/:id
+Return the film with matching id. Used in movie page.
+
+POST /film/query
+Get films based on criteria passed through the body, such as genres and date range. Used in the search page. Note this path does not add data to the database, but XMLHTTPREQUEST does not support GET with a body.
+
+Related to authentication:
+GET /login, GET /profile
+Redirect to appropriate pages depending on whether session in progress.
+
+POST /login
+Process a login attempt. Redirect to profile page or admin page when successful and make a new session.
+
+GET /logout
+Destroy the session.
+
+POST /register
+Process user registration.
+
+Related to comments:
+POST /postComment, POST /deleteComment
+Process comment editing.
+
+Related to users:
+GET /user
+Return all users.
+
+GET /current_user_id
+Return the user id of the current active session.
+
+GET /user/:id
+Return a user by id.
+
+GET /user_by_username/:username
+Get a user by username. Used to display user info in admin page.
+
+PATCH /ban_user/:username
+Ban the user with username. Used in admin page.
+
+POST /user/:id
+DELETE /users/:id/:review_id

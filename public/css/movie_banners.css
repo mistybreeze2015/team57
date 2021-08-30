@@ -1,0 +1,20 @@
+.movie_banner {
+  margin-top: 10px;
+  height: 250px;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.movie_banner img {
+  float: left;
+  height: 230px;
+  padding: 10px;
+  max-width: 30%;
+}
+
+.movie_banner p {
+  margin: 0px;
+  padding: 5px;
+  color: white;
+  font-size: 120%;
+}

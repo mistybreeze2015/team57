@@ -1,0 +1,36 @@
+<html>
+	<head>
+ 	<title>
+	Movie Review
+	</title>
+	<link rel="stylesheet" type="text/css" href="css/movie.css">
+	</head>
+	<body>
+	<!--Include Header by Iframe, using referenced code: https://juejin.im/post/5a685e0e6fb9a01ca602f8ed-->
+	<iframe name="header" width=100% height=200px marginwidth=10px marginheight=10px frameborder="no" border="0"  src="header.html" ></iframe>
+
+	<div id="reviewPanel">
+	<!--Movies inserted here-->
+	</div>
+
+	<div id="commentPanel">
+	<h3>User Comments </h3>
+	<div class="postPanel">
+	<div class="post">As far as I have watched, it is a good movie. There was some emotional moment, which is heartwarming. Well done. We will come back again. </div>
+	<div class="postSrc"> posted by <span class="BoldFont"> User2796</span></div>
+	</div>
+	<div class="postPanel">
+	<div class="post">Above average movie. This one is underrated. You shall definitely give it a try, though the tickets are hard to get nowadays. I believe it is still possible.</div>
+	<div class="postSrc"> posted by <span class="BoldFont"> User5089</span></div>
+	</div>
+	</div>
+	<div id="commentRegion">
+	<textarea id="textArea" type="text" name="comment"></textarea>
+	<br>
+	<button class="Btn" id="submitBtn" name="submitBtn" type="submit" value="submit">Submit</button>
+	<button class="Btn" id="resetBtn" name="resetBtn" type="submit" value="reset">&nbspReset&nbsp </button>
+	</div>
+	</body>
+	<script src="js/movie_banners.js"></script>
+	<script src="js/movie.js"></script>
+</html>

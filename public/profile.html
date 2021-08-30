@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+
+<body>
+    <!-- header bar duplicated for every page -->
+    <iframe name="header" width=100% height=200px marginwidth=10px marginheight=10px frameborder="no" border="0"  src="header.html" ></iframe>
+
+    <!-- implementation for profile view containing profile picture, username,
+    join date, list of reviewed movies, to-watch list -->
+    <img src='default_profile_picture.jpg' id="profile_picture">
+
+    <div id="profile_banner">
+
+    </div>
+
+
+<!-- recently rated movies -->
+
+<!-- this should be loaded dynamically from stored list of movies or from a server call specifying which user's profile is being viewed -->
+<div id= "recently_rated" class="profile_movie_list">
+    <br>
+    <h2>Recently Rated</h2>
+    <br>
+
+</div>
+
+<!-- recent reviews -->
+
+<!-- this should be loaded dynamically from a server call specifying which user's profile is being viewed -->
+<div id="recent_reviews" class="profile_reviews_list">
+    <br><h2>Recent Reviews</h2><br>
+
+</div>
+
+<script src="js/movie_banners.js"></script>
+<script src="js/profile.js"></script>
+</body>
+
+</html>
