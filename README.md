@@ -1,5 +1,4 @@
-# team57
-Movie Project, made by team57, in CSC309
+# Movie Project - CSC309 - Team57
 
 Hi! Welcome to 309Movies. This website presents relevant information about movies!
 
@@ -70,6 +69,8 @@ populates the user data fields seen in the middle. The 'Ban' button removes this
 website (to be implemented in phase 2). On the right side, you can enter movie data and click
 the 'add' button to add the movie into the website data (to be implemented in phase 2). And
 lastly, you get a cute picture of a cat - admin privileges! 
+
+Source: phase1.txt - MichaelKat
 
 Contributors:
 ![Screenshot](https://github.com/mistybreezy/team57/blob/main/contributors.png?raw=true)
