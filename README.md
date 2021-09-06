@@ -1,5 +1,7 @@
 # Movie Project - CSC309 - Team57
 
+URL: https://guarded-castle-32919.herokuapp.com/
+
 Hi! Welcome to 309Movies. This website presents relevant information about movies!
 
 There is no need to login to use our website, but logging in provides more functionality.
@@ -70,7 +72,7 @@ website (to be implemented in phase 2). On the right side, you can enter movie d
 the 'add' button to add the movie into the website data (to be implemented in phase 2). And
 lastly, you get a cute picture of a cat - admin privileges! 
 
-Source: phase1.txt - MichaelKat
+source of README: MichaelKat
 
 Contributors:
 ![Screenshot](https://github.com/mistybreezy/team57/blob/main/contributors.png?raw=true)
