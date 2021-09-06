@@ -72,4 +72,4 @@ the 'add' button to add the movie into the website data (to be implemented in ph
 lastly, you get a cute picture of a cat - admin privileges! 
 
 Contributors:
-![alt text](https://github.com/mistybreezy/team57/blob/main/contributors.png?raw=true)
+![Screenshot](https://github.com/mistybreezy/team57/blob/main/contributors.png?raw=true)
