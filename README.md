@@ -72,7 +72,7 @@ website (to be implemented in phase 2). On the right side, you can enter movie d
 the 'add' button to add the movie into the website data (to be implemented in phase 2). And
 lastly, you get a cute picture of a cat - admin privileges! 
 
-source of README: MichaelKat
+README Source: MichaelKat
 
 Contributors:
 ![Screenshot](https://github.com/mistybreezy/team57/blob/main/contributors.png?raw=true)
