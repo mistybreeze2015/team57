@@ -1,7 +1,5 @@
 # Movie Project - CSC309 - Team57
 
-URL: https://guarded-castle-32919.herokuapp.com/
-
 Hi! Welcome to 309Movies. This website presents relevant information about movies!
 
 There is no need to login to use our website, but logging in provides more functionality.
